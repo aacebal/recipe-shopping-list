@@ -13,6 +13,7 @@ import { RecipeDetailComponent } from './recipe-book/recipe-detail/recipe-detail
 import { BasicHighlightDirective } from './shared/basic-highlight.directive';
 import { BetterHighlightDirective } from './shared/better-highlight.directive';
 import { UnlessDirective } from './shared/unless.directive';
+import { DropdownDirective } from './shared/dropdown.directive';
 
 
 @NgModule({
@@ -27,7 +28,8 @@ import { UnlessDirective } from './shared/unless.directive';
     RecipeDetailComponent,
     BasicHighlightDirective,
     BetterHighlightDirective,
-    UnlessDirective
+    UnlessDirective,
+    DropdownDirective
   ],
   imports: [
     BrowserModule

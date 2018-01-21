@@ -3,8 +3,8 @@
 <div appBasicHighlight class="container">
   <div class="row">
     <div class="col-md-12">
-      <app-recipe-book *appUnless="loadedFeature !== 'recipe'"></app-recipe-book>
-      <app-shopping-list *ngIf="loadedFeature !== 'recipe'"></app-shopping-list>
+      <app-recipe-book *ngIf="loadedFeature === 'recipe'"></app-recipe-book>
+      <app-shopping-list *ngUnless="loadedFeature === 'recipe'"></app-shopping-list>
     </div>
   </div>
 </div>
